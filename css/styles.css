@@ -1,14 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-  background-image: url('../assets/miraz-blur.jpg');
-  background-size: auto 100vh;
-  font-family: 'Roboto', sans-serif;
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
-.menu {
-  background-color: #ffffff;
+/* body {
+
+} */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e8168a;
+}
+
+nav.menu {
+  background-color: whitesmoke;
+  height: 5vh;
 }
 
 .menu ul {
@@ -20,17 +33,52 @@ body {
   list-style: none;
 }
 
-a {
-  color: teal;
-  text-decoration: none;
+.content {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/images/miraz-blur.jpg');
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.site-title,
-.site-subtitle {
-  text-align: center;
+.title,
+.subtitle {
   color: whitesmoke;
+  text-align: center;
+}
+
+.subtitle {
+  white-space: nowrap; /* para a animação ficar apenas em 1 linha */
+  font-size: 20px;
+  font-weight: 300;
+  animation: typing 4s steps(25) 1s normal;
+  overflow: hidden;
+}
+
+/* animação do efeito de digitação */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+.subtitle:after {
+  content: '|';
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+
+/* animação do cursor piscando */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
