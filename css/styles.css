@@ -10,7 +10,7 @@ body {
   background-size: 100vw 100vh;
   font-family: 'Rubik', sans-serif;
   height: 100vh;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 /* breakpoints */
@@ -68,7 +68,8 @@ a:hover {
 
 header .title,
 header .subtitle,
-figcaption {
+figcaption,
+footer p {
   color: whitesmoke;
   text-align: center;
 }
@@ -114,12 +115,19 @@ header .arrow-down {
   display: block;
 }
 
-.skills {
-  padding: 2em;
+.skills,
+.contato,
+.about {
+  padding: 3em;
   height: 100vh;
 }
 
-.skills h2 {
+.skills {
+  background-color: #6e5494;
+}
+
+.skills h2,
+.contato h2 {
   margin-bottom: 1.5em;
   color: whitesmoke;
 }
@@ -148,11 +156,10 @@ header .arrow-down {
 }
 
 .about {
-  padding: 2em;
-  height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #00a8a8;
 }
 
 .about-content {
@@ -166,20 +173,28 @@ header .arrow-down {
 }
 
 .about .title,
-.about h2,
+.about p,
 .about a {
   color: whitesmoke;
   text-align: right;
 }
 
 .about .title {
-  font-size: 2em;
-  font-weight: 500;
+  /* font-weight: 500; */
   margin-bottom: 1em;
 }
 
-.about h2 {
+.about p {
   font-weight: 300;
-  font-size: 1em;
   margin: 1em 0;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: dimgray;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.6em;
 }
