@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url('../assets/images/miraz-blur.jpg');
   background-size: 100vw 100vh;
@@ -44,6 +48,7 @@ nav.menu {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .menu ul {
@@ -60,9 +65,11 @@ nav.menu {
   text-decoration: none;
   padding: 20px;
   color: mediumvioletred;
+  transition: color 0.5s;
 }
 
-a:hover {
+.menu a:active,
+.menu a:hover {
   color: rebeccapurple;
 }
 
@@ -115,7 +122,6 @@ header .arrow-down {
   display: block;
 }
 
-.skills,
 .contato,
 .about {
   padding: 3em;
@@ -123,6 +129,8 @@ header .arrow-down {
 }
 
 .skills {
+  padding: 3em;
+  min-height: 100vh;
   background-color: #6e5494;
 }
 
@@ -153,6 +161,11 @@ header .arrow-down {
   width: 8em;
   height: 8em;
   object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.img-skills:hover {
+  transform: scale(1.2) rotate(2deg);
 }
 
 .about {
@@ -187,6 +200,22 @@ header .arrow-down {
 .about p {
   font-weight: 300;
   margin: 1em 0;
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 4em;
+  text-decoration: none;
+  transition: text-shadow 0.2s;
+}
+
+.contato a:active,
+.contato a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 footer {
