@@ -122,6 +122,11 @@ header .arrow-down {
   display: block;
 }
 
+header .fa-arrow-down {
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
 .contato,
 .about {
   padding: 3em;
@@ -193,15 +198,25 @@ header .arrow-down {
 }
 
 .about .title {
-  /* font-weight: 500; */
+  font-weight: 500;
   margin-bottom: 1em;
 }
 
 .about p {
   font-weight: 300;
+  font-size: 0.8em;
   margin: 1em 0;
 }
 
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #21759b;
+}
+
+.contato .title,
 .contato .icons {
   text-align: center;
 }
@@ -219,8 +234,10 @@ header .arrow-down {
 }
 
 footer {
-  padding: 30px 0;
-  background-color: dimgray;
+  /* padding: 30px 0; */
+  height: 40px;
+  margin-top: -40px;
+  /* background-color: dimgray; */
 }
 
 footer p {
