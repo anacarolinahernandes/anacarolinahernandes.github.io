@@ -279,7 +279,7 @@ header .fa-angle-double-down {
   text-align: center;
 }
 
-@media (max-width: 389px) {
+@media (max-width: 414px) {
   .contact .grid {
     display: grid;
     grid-template-columns: 2fr 2fr;
