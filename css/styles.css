@@ -5,12 +5,8 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background-image: url('../assets/images/miraz-blur.jpg');
+  background-image: url('../img/miraz-blur.jpg');
   background-size: 100vw 100vh;
   font-family: 'Rubik', sans-serif;
   height: 100vh;
@@ -41,6 +37,7 @@ body {
   position: fixed;
   bottom: 8px;
   right: 8px;
+  display: none;
   color: whitesmoke;
   border: 1px solid whitesmoke;
   font-size: 0.8em;
