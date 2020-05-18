@@ -84,6 +84,7 @@ nav.menu {
   padding: 20px;
   color: mediumvioletred;
   transition: color 0.5s;
+  font-size: 0.7em;
 }
 
 .menu a:active,
