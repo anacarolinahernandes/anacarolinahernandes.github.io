@@ -1,133 +1,611 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ana Carolina Hernandes - Front-end Developer</title>
-  <meta name="description"
-    content="Sou Desenvolvedora Front-End atualmente focada em React e React Native, conheça meu portfólio e entre em contato para um orçamento.">
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/6fc087a7d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Ana - Desenvolvedora Frontend</title>
 </head>
 
 <body>
-  <main>
-    <!-- Header -->
-    <header id="top">
-      <nav class="menu">
-        <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#knowledge">Conhecimento</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h1 class="title">[ ANA CAROLINA ]</h1>
-        <h2 class="subtitle">{ Front-end Developer }</h2>
-      </div>
-      <a href="#about" class="arrow-down">
-        <i class="fa fa-angle-double-down icone"></i>
-      </a>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Ana</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Início
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> Sobre
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Experiência
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contato
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Skills -->
-    <!-- <section id="skills" class="skills">
-      <h2 class="title">Skills</h2>
-      <div class="grid">
-        <figure>
-          <img class="img-skills" src="./img/browser-3.png" alt="Desenvolvimento Web" />
-          <figcaption>Desenvolvimento Web</figcaption>
-        </figure>
-        <figure>
-          <img class="img-skills" src="./img/browser-4.png" alt=">Sites responsivos" />
-          <figcaption>Sites responsivos</figcaption>
-        </figure>
-        <figure>
-          <img class="img-skills" src="./img/smartphone.png" alt="Projetos pessoais" />
-          <figcaption>Desenvolvimento Mobile</figcaption>
-        </figure>
-      </div>
-    </section> -->
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/anacarolinahernandes/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/anacarolinahernandes" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="25" y="1" xlink:href="assets/img/perfil.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Oi, eu sou a Ana!</h1>
+                        <h3 class="home__subtitle">Desenvolvedora Frontend</h3>
+                        <p class="home__description">Experiência em desenvolvimento web e mobile</p>
+                        <a href="#contact" class="button button--flex">
+                            Entre em contato <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Rolar para baixo</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-      <div class="about-content">
-        <h2 class="title">SOBRE MIM</h2>
-        <p>
-          Me chamo Ana Carolina Hernandes, moro na capital de São Paulo e sou Desenvolvedora Front-end. Ex-aspirante a
-          publicitária, encontrei na programação a minha vocação. Possuo formação como analista de sistemas
-          e trabalho desde 2018 no desenvolvimento para internet e mobile, focando na construção de interfaces. Nas
-          horas vagas, pratico artes marciais, jogo videogame e assisto séries e/ou filmes.
-        </p>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">Sobre mim</h2>
+            <span class="section__subtitle">Um breve resumo</span>
+            <div class="about__container container grid">
+                <img src="assets/img//about2.png" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        Desenvolvedora com formação em Análise de Sistemas, trabalhando desde 2018 em aplicações web e
+                        mobile, focando na construção de interfaces. Participei de
+                        projetos nos setores agrícola, bancário e telecomunicações. Um deles foi a
+                        criação/implantação de um novo aplicativo em React Native que hoje acumula mais de 320 mil
+                        usuários e 2 milhões de acessos ao mês.
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Anos <br> de experiência</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">6+</span>
+                            <span class="about__info-name">Projetos <br> concluídos</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">4+</span>
+                            <span class="about__info-name">Empresas <br> trabalhadas</span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/cv.pdf" class="button button--flex">
+                            Baixar CV <i class="uit uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>
-          Atualmente na Accenture, já trabalhei em projetos de clientes como Bayer/Monsanto, Vivo e Oi. Mais detalhes
-          podem ser encontrados no meu <a href="https://www.linkedin.com/in/anacarolinahernandes/" target="_blank"
-            title="LinkedIn">LinkedIn</a>.
-        </p>
-      </div>
-    </section>
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Meu nível técnico</span>
+            <div class="skills__container container grid">
+                <div>
+                    <!--==================== SKILL 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Frontend</h1>
+                                <span class="skills__subtitle">Ferramentas para web</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">TypeScript</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__ts"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SKILL 2 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-mobile-android-alt skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Mobile</h1>
+                                <span class="skills__subtitle">Ferramentas para dispositivos móveis</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React Native</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__rn"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Flutter</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flutter"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Nativo</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__native"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!--==================== SKILL 3 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-arrow skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Outras</h1>
+                                <span class="skills__subtitle">Ferramentas diversas</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__git"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Dart</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__dart"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Redux</h3>
+                                    <span class="skills__number">55%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__redux"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__bootstrap"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Knowledge -->
-    <section id="knowledge" class="knowledge">
-      <div class="knowledge-content">
-        <h2 class="title">CONHECIMENTO</h2>
-        <p>Estou sempre atenta ao mercado, incorporando novas
-          tecnologias e métodos conforme minhas necessidades e dos projetos.</p>
-        <ul class="grid">
-          <li class="r1">HTML 5</li>
-          <li class="r1">CSS 3</li>
-          <li class="r1">JavaScript</li>
-          <li class="r1">React</li>
-          <li class="r1">React Native</li>
-          <li class="r1">Redux</li>
-          <li class="r2">TypeScript</li>
-          <li class="r2">Angular</li>
-          <li class="r1">Jest</li>
-          <li class="r1">Git</li>
-          <li class="r1">Styled Components</li>
-          <li class="r2">Usabilidade</li>
-          <li class="r2">Experiência do Usuário</li>
-          <li class="r2">Acessibilidade</li>
-          <li class="r1">Responsividade</li>
-        </ul>
-      </div>
-    </section>
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Experiência e Formação</h2>
+            <span class="section__subtitle">Minha jornada</span>
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#work">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Trabalho
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#education">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Educação
+                    </div>
+                </div>
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content  qualification__active" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Analista de Desenvolvimento de Software</h3>
+                                <span class="qualification__subtitle">Accenture</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - atual
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Analista de Dados</h3>
+                                <span class="qualification__subtitle">Fundação do ABC</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2010 - 2018
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Colunista Freelancer</h3>
+                                <span class="qualification__subtitle">WoWGirl</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2017
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <h2 class="title">Entre em contato:</h2>
-      <div class="grid icons">
-        <a target="_blank" href="https://github.com/anacarolinahernandes">
-          <i class="fab fa-github"></i>
-        </a>
-        <a target="_blank" href="https://linkedin.com/in/anacarolinahernandes">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/anacbhernandes">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="mailto:anacbhernandes@gmail.com">
-          <i class="fas fa-at"></i>
-        </a>
-      </div>
-    </section>
-    <a href="#top" id="scrollToTop">
-      <i class="fas fa-chevron-up"></i>
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification__content" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Tecnólogo em Análise de Sistemas</h3>
+                                <span class="qualification__subtitle">UNICID - Universidade Cidade de São Paulo</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2016
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Técnica em Administração de Empresas</h3>
+                                <span class="qualification__subtitle">ETEC Professor Camargo Aranha</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2006 - 2007
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">Projetos</h2>
+                        <p class="project__description">Acesse meu Github e conheça os projetos e tecnologias que estou
+                            atuando no momento.</p>
+                        <a href="https://github.com/anacarolinahernandes" target="_blank"
+                            class="button button--flex button--white">
+                            Clique aqui
+                            <i class="uil uil-github-alt project__icon button__icon"></i>
+                        </a>
+                    </div>
+                    <img src="assets/img/octocat.png" alt="" class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+            <h2 class="section__title">Depoimentos</h2>
+            <span class="section__subtitle">Opiniões de quem já trabalhou comigo</span>
+            <div class="testimonial__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== TESTIMONIAL 1 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="assets/img/kaique.jpg" alt="Foto de Kaique Munhoz" class="testimonial__img">
+                                <div>
+                                    <h3 class="testimonial__name">Kaique Munhoz</h3>
+                                    <span class="testimonial__client">Consultor na Accenture</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial__description">Ana é uma profissional sempre proativa, não só em suas
+                            tarefas mas nas tarefas do time como um todo. Está sempre disposta a ajudar no que for
+                            necessário e muito preocupada com resultados.</p>
+                    </div>
+                    <!--==================== TESTIMONIAL 2 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="assets/img/thais.jpg" alt="Foto de Thais Marcondes" class="testimonial__img">
+                                <div>
+                                    <h3 class="testimonial__name">Thais Marcondes</h3>
+                                    <span class="testimonial__client">Gerente na Accenture</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial__description">Muito colaborativa, demonstra forte senso crítico de
+                            qualidade ao realizar revisão de códigos e propor melhorias coerentes. Se comunica
+                            muitíssimo bem e
+                            está sempre aberta a sugestões e novos desafios. Com notável evolução e amadurecimento
+                            profissional, a Ana hoje é vista por líderes e colegas de trabalho como referência no
+                            desenvolvimento Frontend.</p>
+                    </div>
+                    <!--==================== TESTIMONIAL 3 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="assets/img/julio.jpg" alt="Foto de Julio Bando" class="testimonial__img">
+                                <div>
+                                    <h3 class="testimonial__name">Julio Bando</h3>
+                                    <span class="testimonial__client">Arquiteto na AWS</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial__description">Ana sabe utilizar bem suas habilidades técnicas de
+                            componentização, contribuindo de forma significativa com a qualidade do desenvolvimento.
+                            Também destaca-se pela boa comunicação e relacionamento com a equipe e cliente.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contato</h2>
+            <span class="section__subtitle">Vamos bater um papo?</span>
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <a href="mailto:anacbhernandes@gmail.com" class="footer__social">
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">anacbhernandes(at)gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Local</h3>
+                            <span class="contact__subtitle">São Paulo/SP - Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-github-alt contact__icon"></i>
+                        <a href="https://github.com/anacarolinahernandes" target="_blank" class="footer__social">
+                            <h3 class="contact__title">Github</h3>
+                            <span class="contact__subtitle">@anacarolinahernandes</span>
+                        </a>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-linkedin-alt contact__icon"></i>
+                        <a href="https://linkedin.com/in/anacarolinahernandes" target="_blank" class="footer__social">
+                            <h3 class="contact__title">Linkedin</h3>
+                            <span class="contact__subtitle">@anacarolinahernandes</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Ana</h1>
+                    <span class="footer__subtitle">Desenvolvedora Frontend</span>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contato</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/anacarolinahernandes" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/anacarolinahernandes" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://twitter.com/anacbhernandes" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Ana Hernandes,
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>. Todos os direitos
+                reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-  </main>
 
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-  <footer>
-    <p>
-      &copy; 2020, Ana Carolina Hernandes. Todos os direitos reservados.
-    </p>
-  </footer>
-
-  <script src="./js/scripts.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
